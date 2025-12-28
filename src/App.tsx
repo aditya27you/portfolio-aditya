@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-base-100 text-base-content p-5">
+      <h1 className="text-4xl font-bold font-sans text-primary">Arjun Sharma</h1>
+      <h2 className="text-2xl font-mono text-secondary">Full-Stack Developer</h2>
+      
+      <div className="flex gap-4 mt-8">
+        <button className="btn btn-primary">Primary Button</button>
+        <button className="btn btn-secondary">Secondary Button</button>
+        <button className="btn btn-accent">Accent Button</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      
+      <div className="card w-96 bg-base-200 shadow-xl mt-8">
+        <div className="card-body">
+          <h2 className="card-title">Atomic Design Ready!</h2>
+          <p>The project structure and configuration are set up according to the PRD.</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-sm btn-ghost">Dismiss</button>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
