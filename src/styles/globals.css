@@ -26,3 +26,14 @@
     @apply antialiased transition-colors duration-300;
   }
 }
+
+@layer components {
+  /* Typography Atom Classes */
+  .type-h1 { @apply text-4xl font-extrabold tracking-tight lg:text-5xl font-sans; }
+  .type-h2 { @apply text-3xl font-bold tracking-tight first:mt-0 font-sans; }
+  .type-h3 { @apply text-2xl font-semibold tracking-tight font-sans; }
+  .type-h4 { @apply text-xl font-semibold tracking-tight font-sans; }
+  .type-p  { @apply leading-7 [&:not(:first-child)]:mt-6 font-sans; }
+  .type-span { @apply font-sans; }
+  .type-code { @apply relative rounded bg-neutral/10 px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold; }
+}
