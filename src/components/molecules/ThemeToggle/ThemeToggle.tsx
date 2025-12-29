@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Icon } from '@/components/atoms/Icon';
 
 export interface ThemeToggleProps {
@@ -6,14 +6,11 @@ export interface ThemeToggleProps {
 }
 
 export const ThemeToggle = ({ className = '' }: ThemeToggleProps) => {
-  const [theme, setTheme] = useState('light');
-
-  // Sync with system or localStorage on mount
-  useEffect(() => {
+  const [theme, setTheme] = useState(() => {
     const localTheme = localStorage.getItem('theme') || 'light';
-    setTheme(localTheme);
     document.documentElement.setAttribute('data-theme', localTheme);
-  }, []);
+    return localTheme;
+  });
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';

@@ -14,7 +14,7 @@ export const React: Story = {
   args: {
     name: 'React',
     iconName: 'FaReact',
-    proficiency: 'Advanced',
+    category: 'Frontend',
   },
 };
 
@@ -22,7 +22,7 @@ export const NodeJs: Story = {
   args: {
     name: 'Node.js',
     iconName: 'FaNodeJs',
-    proficiency: 'Intermediate',
+    category: 'Backend',
   },
 };
 
@@ -30,6 +30,6 @@ export const Python: Story = {
   args: {
     name: 'Python',
     iconName: 'FaPython',
-    proficiency: 'Beginner',
+    category: 'Language',
   },
 };

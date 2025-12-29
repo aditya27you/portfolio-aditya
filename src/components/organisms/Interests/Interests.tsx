@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Typography } from '@/components/atoms/Typography';
 import { Icon } from '@/components/atoms/Icon';
 

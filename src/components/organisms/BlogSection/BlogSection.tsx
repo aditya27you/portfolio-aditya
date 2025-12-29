@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Typography } from '@/components/atoms/Typography';
 import { BlogCard, type BlogPost } from '@/components/molecules/BlogCard';
 import { Modal } from '@/components/molecules/Modal';

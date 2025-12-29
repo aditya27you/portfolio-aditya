@@ -14,7 +14,7 @@ export interface IconProps {
 }
 
 export const Icon = ({ name, size = '1em', color, className = '' }: IconProps) => {
-  const IconComponent = (Icons as any)[name];
+  const IconComponent = (Icons as Record<string, React.ElementType>)[name];
 
   if (!IconComponent) {
     console.warn(`Icon "${name}" not found.`);
