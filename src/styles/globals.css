@@ -36,4 +36,7 @@
   .type-p  { @apply leading-7 [&:not(:first-child)]:mt-6 font-sans; }
   .type-span { @apply font-sans; }
   .type-code { @apply relative rounded bg-neutral/10 px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold; }
+  
+  /* Icon Atom Classes */
+  .atom-icon { @apply inline-flex items-center justify-center align-middle; }
 }
