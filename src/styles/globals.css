@@ -39,4 +39,7 @@
   
   /* Icon Atom Classes */
   .atom-icon { @apply inline-flex items-center justify-center align-middle; }
+
+  /* CTA Button Molecule Classes */
+  .molecule-cta-gradient { @apply bg-gradient-to-r from-primary to-secondary text-white border-none hover:shadow-lg hover:scale-105 transition-transform duration-300; }
 }
