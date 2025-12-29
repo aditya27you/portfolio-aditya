@@ -15,7 +15,7 @@ type Story = StoryObj<typeof Hero>;
 
 export const Default: Story = {
   args: {
-    name: 'Arjun Sharma',
+    name: 'Aditya Shah',
     roles: ['Full-Stack Developer', 'Competitive Programmer', 'Problem Solver'],
     tagline: '3rd Year CS Undergrad | MERN Stack Developer | Passionate about building scalable products.',
     primaryCtaText: 'View Projects',

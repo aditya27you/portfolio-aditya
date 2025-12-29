@@ -1,6 +1,6 @@
-import React, { InputHTMLAttributes, ReactNode } from 'react';
+import { type InputHTMLAttributes, type ReactNode } from 'react';
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   variant?: 'bordered' | 'ghost' | 'primary' | 'secondary' | 'accent' | 'info' | 'success' | 'warning' | 'error';
   size?: 'xs' | 'sm' | 'md' | 'lg';
   label?: string;
@@ -22,6 +22,9 @@ export const Input = ({
   const sizeClass = `input-${size}`;
   const errorClass = error ? 'input-error' : '';
 
+  // Explicitly extract props that are not native HTML attributes
+  const { ...nativeProps } = props;
+
   return (
     <div className="form-control w-full max-w-xs">
       {label && (
@@ -37,7 +40,7 @@ export const Input = ({
         )}
         <input
           className={`input ${variantClass} ${sizeClass} ${errorClass} w-full ${leftIcon ? 'pl-10' : ''} ${className}`}
-          {...props}
+          {...nativeProps}
         />
       </div>
       {error && (

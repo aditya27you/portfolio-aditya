@@ -1,4 +1,4 @@
-import React, { LabelHTMLAttributes } from 'react';
+import type { LabelHTMLAttributes } from 'react';
 
 export interface LabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
   text?: string;

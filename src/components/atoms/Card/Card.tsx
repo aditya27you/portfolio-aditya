@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import type { HTMLAttributes } from 'react';
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   variant?: 'base' | 'bordered' | 'compact' | 'side' | 'image-full';

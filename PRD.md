@@ -4,22 +4,22 @@ I'll create a comprehensive PRD with dummy student information. Let me generate 
 
 ## Simulated Student Responses:
 
-1. **Name & Year:** Aditya Shah, 3rd year CS student"
+1. **Name & Year:** Aditya Shah, 5th Semester CS student"
 2. **GitHub:** "aditya27you"
 3. **Repository:** "portfolio-2025"
 4. **Skills:** "React, Node.js, Python, MongoDB, Express, Java, DSA"
-5. **Projects:** "5 projects"
-6. **Experience:** "One internship at a startup, Google Cloud certification, won college hackathon"
-7. **Sections:** "All suggested sections + a Blog section"
+5. **Projects:** "EcoLearn + 3 others"
+6. **Experience:** "Web Development and Data Analytics Internships"
+7. **Sections:** "All suggested sections"
 8. **Color Scheme:** "Professional Blue with gradient accents"
 9. **UI Library:** "DaisyUI 5"
 10. **Animations:** "Smooth scroll, typing effect for hero, card hover effects, fade-in on scroll"
-11. **AI Assistant:** "GitHub Copilot"
+11. **AI Assistant:** "Gemini"
 12. **Features:** "Dark/Light mode toggle, contact form with email, resume download"
 
 ---
 
-# Arjun Sharma's Professional Portfolio Website
+# Aditya Shah's Professional Portfolio Website
 **Product Requirements Document**
 
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev/)
@@ -29,15 +29,15 @@ I'll create a comprehensive PRD with dummy student information. Let me generate 
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-5-5A0EF8?logo=daisyui)](https://daisyui.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-3.12-88CE02?logo=greensock)](https://greensock.com/gsap/)
 
-**Developer:** Arjun Sharma | **GitHub:** [@arjun-dev](https://github.com/arjun-dev)  
-**Live Demo:** https://arjun-dev.github.io/portfolio-2025/
+**Developer:** Aditya Shah | **GitHub:** [@aditya27you](https://github.com/aditya27you)  
+**Live Demo:** (To be deployed)
 
 ---
 
 ## 🎯 Project Overview
 
 ### Purpose
-A modern, responsive portfolio website showcasing Arjun Sharma's technical skills, projects, and professional journey as a 3rd-year Computer Science undergraduate specializing in full-stack development and competitive programming.
+A modern, responsive portfolio website showcasing Aditya Shah's technical skills, projects, and professional journey as a 5th-semester Computer Science undergraduate specializing in Full-Stack MERN Development and Data Analytics.
 
 ### Target Audience
 - Recruiters and HR professionals from tech companies
@@ -282,7 +282,7 @@ Step 4: Design Templates
 └─ Create HomeTemplate with organism placeholders
 
 Step 5: Populate Pages
-└─ Fill HomeTemplate with real Arjun's content and data
+└─ Fill HomeTemplate with real Aditya's content and data
 ```
 
 ### Benefits for Your Portfolio
@@ -407,7 +407,7 @@ Step 5: Populate Pages
 | **Version Control** | Git + GitHub | - | Source control and hosting |
 | **Component Dev** | Storybook | 10.x | Component documentation |
 | **IDE** | WebStorm | Latest | Primary development environment |
-| **AI Assistant** | GitHub Copilot | - | Code completion and suggestions |
+| **AI Assistant** | Gemini | - | Code completion and suggestions |
 | **Deployment** | GitHub Pages | - | Static site hosting |
 
 ### Atomic Design Component Inventory
@@ -476,7 +476,7 @@ Step 5: Populate Pages
 ## 📄 Detailed Section Requirements
 
 ### 1. Hero Section (Organism)
-**Purpose:** Create immediate impact and introduce Arjun as a full-stack developer
+**Purpose:** Create immediate impact and introduce Aditya Shah as a Full-Stack MERN Developer
 
 **Atomic Breakdown:**
 - **Atoms:** Typography (h1, h2, p), Button, Icon (scroll indicator, social icons)
@@ -485,11 +485,11 @@ Step 5: Populate Pages
 
 **Elements:**
 - Full viewport height (100vh)
-- Animated typing effect: "Hi, I'm Arjun Sharma" → "Full-Stack Developer" → "Problem Solver"
-- Professional tagline: "3rd Year CS Undergrad | MERN Stack Developer | Competitive Programmer"
+- Animated typing effect: "Hi, I'm Aditya Shah" → "Full-Stack MERN Developer" → "Data Analytics Enthusiast"
+- Professional tagline: "5th Semester CS Undergrad | Passionate about building scalable web solutions and exploring data-driven insights."
 - Gradient background with subtle animated mesh pattern
 - Two CTA buttons: "View Projects" (primary) + "Download Resume" (outline)
-- Social links row: GitHub, LinkedIn, Twitter, LeetCode
+- Social links row: GitHub, LinkedIn, HackerRank
 - Animated scroll indicator (bouncing arrow)
 
 **Component Structure:**
@@ -505,8 +505,7 @@ Hero
 ├── SocialLinks (Molecule)
 │   ├── Link (Atom) - GitHub
 │   ├── Link (Atom) - LinkedIn
-│   ├── Link (Atom) - Twitter
-│   └── Link (Atom) - LeetCode
+│   └── Link (Atom) - HackerRank
 └── Icon (Atom) - Scroll indicator
 ```
 
@@ -530,7 +529,7 @@ interface HeroData {
 ```
 
 ### 2. About Section (Organism)
-**Purpose:** Humanize Arjun with personal story and technical background
+**Purpose:** Humanize Aditya Shah with personal story and technical background
 
 **Atomic Breakdown:**
 - **Atoms:** Avatar, Typography, Badge, Icon
@@ -540,15 +539,15 @@ interface HeroData {
 **Elements:**
 - Professional headshot (400px circle, blue gradient ring, subtle shadow)
 - 3-paragraph bio covering:
-    - Academic background (3rd year CS, specialization in web dev & DSA)
-    - Technical journey (started with Java, fell in love with React ecosystem)
-    - Career aspirations (building scalable products, contributing to open source)
-- Tech stack badge wall (animated reveal): React, Node.js, Python, MongoDB, Express, Java
-- Quick stats section:
-    - 📂 **5** Projects Completed
-    - 💻 **7** Technologies Mastered
-    - 🏆 **3** Achievements Unlocked
-    - ⭐ **500+** Problems Solved (LeetCode/Codeforces)
+    - Academic background (5th Semester CS, specialization in MERN & Data Analytics)
+    - Technical journey (building robust, scalable web applications)
+    - Career aspirations (innovative solutions that impact society positively)
+- Tech stack badge wall (animated reveal): React, Node.js, Express.js, MongoDB, JavaScript, TypeScript, Python, Data Analytics, Machine Learning, Git, GitHub, TailwindCSS, DaisyUI
+- Quick stats section (placeholders, to be updated):
+    - 📂 **X** Projects Completed
+    - 💻 **Y** Technologies Mastered
+    - 🏆 **Z** Achievements Unlocked
+    - ⭐ **0** Problems Solved (HackerRank will be linked)
 
 **Component Structure:**
 ```typescript
@@ -597,33 +596,18 @@ interface AboutData {
 - **Organisms:** SkillsGrid with category tabs
 
 **Categories:**
-1. **Languages:** JavaScript, TypeScript, Python, Java, C++
-2. **Frontend:** React 19, TailwindCSS, HTML5, CSS3, Redux
-3. **Backend:** Node.js, Express.js, MongoDB, MySQL, RESTful APIs
-4. **Tools & Others:** Git, GitHub, VS Code, Postman, Docker (learning)
-
-**Component Structure:**
-```typescript
-// Organism: SkillsGrid
-SkillsGrid
-├── CategoryTabs (Molecule)
-│   ├── Button (Atom) - Languages
-│   ├── Button (Atom) - Frontend
-│   ├── Button (Atom) - Backend
-│   └── Button (Atom) - Tools
-└── Grid Container (4 columns desktop, 2 tablet, 1 mobile)
-    └── SkillCard[] (Molecule)
-        ├── Icon (Atom) - Tech logo
-        ├── Typography (Atom) - Skill name
-        └── Badge (Atom) - Proficiency level
-```
+1. **Languages:** JavaScript, TypeScript, Python
+2. **Frontend:** React.js, TailwindCSS
+3. **Backend:** Node.js, Express.js, MongoDB, REST API
+4. **Data Science:** Data Analytics, Machine Learning
+5. **Tools & Others:** Git, GitHub, Clean Code, Problem Solving
 
 **Visualization:**
 - Grid layout with hover effects (card lift + glow)
 - Proficiency levels indicated by badge colors:
-    - 🟢 Advanced (green) - React, JavaScript, Node.js, Java
-    - 🟡 Intermediate (yellow) - TypeScript, Python, MongoDB
-    - 🔵 Learning (blue) - Docker, AWS
+    - 🟢 Advanced (green)
+    - 🟡 Intermediate (yellow)
+    - 🔵 Learning (blue)
 
 **Animation:**
 - Category-wise reveal on scroll (fade + slide up)
@@ -635,16 +619,14 @@ SkillsGrid
 interface Skill {
   id: string;
   name: string;
-  category: 'language' | 'frontend' | 'backend' | 'tool';
+  category: 'language' | 'frontend' | 'backend' | 'tool' | 'Data Science' | 'Practices';
   icon: string; // React Icons component name or SVG
   proficiency: 'beginner' | 'intermediate' | 'advanced';
   yearsOfExperience?: number;
 }
 
 const skillsData: Skill[] = [
-  { id: '1', name: 'React', category: 'frontend', icon: 'FaReact', proficiency: 'advanced', yearsOfExperience: 2 },
-  { id: '2', name: 'Node.js', category: 'backend', icon: 'FaNodeJs', proficiency: 'advanced', yearsOfExperience: 1.5 },
-  // ... 20+ more skills
+  // ... (updated with Aditya Shah's skills)
 ];
 ```
 
@@ -656,7 +638,7 @@ const skillsData: Skill[] = [
 - **Molecules:** ProjectTag, CTAButton
 - **Organisms:** ProjectCard, ProjectFilter
 
-**Number of Projects:** 5 featured projects
+**Number of Projects:** EcoLearn + 3 others featured projects
 
 **Component Structure:**
 ```typescript
@@ -677,40 +659,29 @@ ProjectCard
 
 **Featured Projects:**
 
-1. **E-Commerce Platform** (MERN Stack)
-    - Full-stack shopping site with cart, payments, admin panel
-    - Tech: React, Node.js, Express, MongoDB, Stripe
-    - Features: JWT auth, Razorpay integration, admin dashboard
+1. **EcoLearn – Gamified Environmental Education Platform** (Full-Stack MERN)
+    - Description: Interactive platform for environmental education.
+    - Tech: React, Node.js, Express.js, MongoDB, MERN Stack
     - Links: Live Demo, GitHub
 
-2. **Real-Time Chat Application**
-    - WebSocket-based messaging app with rooms
-    - Tech: React, Socket.io, Node.js, MongoDB
-    - Features: Private/group chats, typing indicators, file sharing
+2. **Project Alpha (Placeholder)**
+    - Description: Placeholder project.
+    - Tech: React, TypeScript, TailwindCSS
     - Links: Live Demo, GitHub
 
-3. **Portfolio Website Builder** (SaaS)
-    - Template-based portfolio generator for students
-    - Tech: React, TypeScript, TailwindCSS, Firebase
-    - Features: Drag-drop editor, custom domains, analytics
+3. **Project Beta (Placeholder)**
+    - Description: Placeholder project.
+    - Tech: Python, Pandas, Matplotlib
     - Links: Live Demo, GitHub
 
-4. **College Event Management System**
-    - Platform for organizing campus events
-    - Tech: React, Node.js, MySQL, AWS S3
-    - Features: Event registration, QR tickets, email notifications
-    - Links: Live Demo, GitHub
-
-5. **DSA Problem Tracker** (Personal Tool)
-    - Track competitive programming progress
-    - Tech: React, Chart.js, LocalStorage
-    - Features: Problem categorization, streak tracking, stats dashboard
+4. **Project Gamma (Placeholder)**
+    - Description: Placeholder project.
+    - Tech: Machine Learning, Scikit-learn, Jupyter
     - Links: Live Demo, GitHub
 
 **Layout:**
 - Grid: 3 columns desktop, 2 tablet, 1 mobile
-- Featured project (E-Commerce) spans 2 columns on desktop
-- Filter buttons above grid: All, Frontend, Full-Stack, Tools
+- Filter buttons above grid: All, Frontend, Full-Stack, Data Science, Tools
 
 **Hover Effect:**
 - 3D tilt effect using vanilla-tilt.js
@@ -731,7 +702,7 @@ interface Project {
   liveUrl?: string;
   githubUrl: string;
   featured: boolean;
-  category: 'frontend' | 'fullstack' | 'backend' | 'tool';
+  category: 'frontend' | 'fullstack' | 'backend' | 'tool' | 'data-science';
   completionDate: string;
 }
 ```
@@ -763,30 +734,17 @@ Timeline
 
 **Timeline Entries:**
 
-1. **Full-Stack Development Intern** (June 2024 - August 2024)
-    - **Company:** TechStartup Innovations Pvt. Ltd.
-    - **Achievements:**
-        - Built RESTful APIs serving 10,000+ requests/day
-        - Optimized React components reducing load time by 40%
-        - Collaborated with 5-person team using Agile methodology
-        - Deployed features to production using Docker + AWS
+1. **B.Tech Computer Science Undergraduate (5th Semester)** (Present)
+    - **University:** ITM University, Gwalior
+    - **Description:** Pursuing Bachelor of Technology in Computer Science, focusing on Software Development, Data Science, and Machine Learning.
 
-2. **Google Cloud Certified** (May 2024)
-    - **Certification:** Associate Cloud Engineer
-    - **Skills:** GCP, Cloud Architecture, Kubernetes
-    - **Verification:** [Link to credential]
+2. **Web Development Intern** (Summer 2024 - Example)
+    - **Company:** Example Tech Solutions
+    - **Description:** Contributed to the development of responsive web applications using React and Node.js. Gained hands-on experience in Agile development methodologies.
 
-3. **Smart India Hackathon Winner** (March 2024)
-    - **Achievement:** 1st Place - Software Edition
-    - **Project:** AI-powered agriculture advisory system
-    - **Team Size:** 6 members
-    - **Recognition:** ₹1,00,000 prize + mentorship
-
-4. **Bachelor of Technology - Computer Science** (2022 - 2026)
-    - **University:** Indian Institute of Technology (Example)
-    - **CGPA:** 8.5/10
-    - **Relevant Courses:** DSA, DBMS, Web Development, AI/ML
-    - **Clubs:** Coding Club Secretary, Tech Fest Coordinator
+3. **Data Analytics Intern** (Summer 2023 - Example)
+    - **Company:** Example Analytics Firm
+    - **Description:** Assisted in data collection, cleaning, and visualization using Python and its libraries.
 
 **Visualization:**
 - Vertical timeline on mobile, horizontal on desktop
@@ -826,7 +784,7 @@ BlogSection
 │   ├── Typography (Atom) - "Latest Articles"
 │   └── SearchBar (Molecule) - Filter by keyword
 ├── CategoryFilter
-│   └── Badge[] (Atom) - React, Node.js, DSA, Career
+│   └── Badge[] (Atom) - Full-Stack, Data Science, Backend
 └── BlogGrid
     └── BlogCard[] (Molecule)
         ├── Image (Atom) - Cover image
@@ -841,23 +799,23 @@ BlogSection
 
 **Sample Blog Posts:**
 
-1. **"Building Scalable APIs with Node.js and Express"**
-    - Category: Backend
-    - Read Time: 8 min
-    - Date: Dec 2024
-    - Excerpt: Learn best practices for RESTful API design...
-
-2. **"React 19 New Features You Should Know"**
-    - Category: Frontend
-    - Read Time: 6 min
-    - Date: Nov 2024
-    - Excerpt: Exploring React's latest updates including...
-
-3. **"My Journey to Solving 500+ DSA Problems"**
-    - Category: Career
+1. **"Understanding MERN Stack Architecture"**
+    - Category: Full-Stack
     - Read Time: 10 min
-    - Date: Oct 2024
-    - Excerpt: Tips and strategies for competitive programming...
+    - Date: Dec 28, 2025
+    - Excerpt: A deep dive into how MongoDB, Express.js, React, and Node.js work together...
+
+2. **"Introduction to Data Analytics with Python"**
+    - Category: Data Science
+    - Read Time: 8 min
+    - Date: Nov 15, 2025
+    - Excerpt: Explore the basics of data analysis using Python...
+
+3. **"Building RESTful APIs with Node.js and Express"**
+    - Category: Backend
+    - Read Time: 12 min
+    - Date: Oct 01, 2025
+    - Excerpt: A practical guide to creating robust and scalable RESTful APIs...
 
 **Layout:**
 - Grid: 3 columns desktop, 2 tablet, 1 mobile
@@ -873,7 +831,7 @@ interface BlogPost {
   excerpt: string;
   content?: string; // Full markdown content
   coverImage: string;
-  category: 'react' | 'nodejs' | 'dsa' | 'career' | 'tutorial';
+  category: 'Full-Stack' | 'Data Science' | 'Backend' | 'Frontend' | 'Career' | 'Tutorial';
   readTime: number; // minutes
   publishDate: string;
   slug: string;
@@ -925,15 +883,14 @@ ContactForm
 - Send button with loading spinner
 
 **Contact Information:**
-- ✉️ Email: arjun.sharma@example.com (mailto: link + copy button)
-- 📱 Phone: +91 98765 43210 (tel: link + copy button)
-- 📍 Location: Mumbai, Maharashtra, India
+- ✉️ Email: shahaditya297@gmail.com (mailto: link + copy button)
+- 📱 Phone: +91 7389879593 (tel: link + copy button)
+- 📍 Location: Darjeeling, West Bengal, India
 
 **Social Links:**
-- GitHub: github.com/arjun-dev
-- LinkedIn: linkedin.com/in/arjun-sharma-dev
-- Twitter: twitter.com/arjunDev
-- LeetCode: leetcode.com/arjun_coder
+- GitHub: github.com/aditya27you
+- LinkedIn: linkedin.com/in/aditya27you
+- HackerRank: hackerrank.com/shahaditya03714
 
 **Form Integration:**
 - EmailJS for backend
@@ -1038,6 +995,7 @@ const validationSchema = {
              accent: "#2DD4BF",
              neutral: "#F9FAFB",
              "base-100": "#111827",
+             "base-200": "#1F2937",
            },
          },
        ],
@@ -1056,7 +1014,7 @@ const validationSchema = {
    git add .
    git commit -m "Initial commit: Project setup with Vite, React 19, TypeScript, TailwindCSS, DaisyUI"
    git branch -M main
-   git remote add origin https://github.com/arjun-dev/portfolio-2025.git
+   git remote add origin https://github.com/aditya27you/portfolio-2025.git
    git push -u origin main
    ```
 
@@ -1131,48 +1089,13 @@ portfolio-2025/
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
+  variant: 'primary' | 'secondary' | 'outline' | 'ghost';
+  size: 'sm' | 'md' | 'lg';
+  children: React.ReactNode;
+  onClick?: () => void;
+  icon?: React.ReactNode;
   loading?: boolean;
-  icon?: ReactNode;
-  children: ReactNode;
 }
-
-export const Button = ({
-  variant = 'primary',
-  size = 'md',
-  loading = false,
-  icon,
-  children,
-  className = '',
-  disabled,
-  ...props
-}: ButtonProps) => {
-  const baseClasses = 'btn';
-  const variantClasses = {
-    primary: 'btn-primary',
-    secondary: 'btn-secondary',
-    outline: 'btn-outline',
-    ghost: 'btn-ghost',
-  };
-  const sizeClasses = {
-    sm: 'btn-sm',
-    md: 'btn-md',
-    lg: 'btn-lg',
-  };
-
-  return (
-    <button
-      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
-      disabled={disabled || loading}
-      {...props}
-    >
-      {loading && <span className="loading loading-spinner"></span>}
-      {icon && !loading && <span className="mr-2">{icon}</span>}
-      {children}
-    </button>
-  );
-};
 ```
 
 **Storybook Story:**
@@ -1244,30 +1167,11 @@ import { Typography } from '@/components/atoms/Typography/Typography';
 import { Badge } from '@/components/atoms/Badge/Badge';
 
 interface SkillCardProps {
-  icon: ReactNode;
+  icon: React.ReactNode;
   name: string;
   proficiency: 'beginner' | 'intermediate' | 'advanced';
+  category: 'language' | 'frontend' | 'backend' | 'tool';
 }
-
-export const SkillCard = ({ icon, name, proficiency }: SkillCardProps) => {
-  const badgeColor = {
-    beginner: 'badge-info',
-    intermediate: 'badge-warning',
-    advanced: 'badge-success',
-  };
-
-  return (
-    <Card className="hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl">
-      <div className="flex flex-col items-center gap-3 p-4">
-        <div className="text-4xl text-primary">{icon}</div>
-        <Typography variant="h4" className="font-semibold">{name}</Typography>
-        <Badge className={badgeColor[proficiency]}>
-          {proficiency.charAt(0).toUpperCase() + proficiency.slice(1)}
-        </Badge>
-      </div>
-    </Card>
-  );
-};
 ```
 
 ### Phase 3: Build Organism Components (Day 8-14)
@@ -1305,51 +1209,6 @@ const navItems = [
   { id: 'blog', label: 'Blog', href: '#blog' },
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
-
-export const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
-  const handleScroll = (href: string) => {
-    gsap.to(window, {
-      duration: 0.8,
-      scrollTo: { y: href, offsetY: 80 },
-      ease: 'power2.inOut',
-    });
-    setIsMenuOpen(false);
-  };
-
-  return (
-    <nav className="navbar bg-base-100/80 backdrop-blur-md fixed top-0 z-50 shadow-md">
-      <div className="navbar-start">
-        <Button variant="ghost" className="text-xl font-bold">
-          AS.
-        </Button>
-      </div>
-      
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-2">
-          {navItems.map((item) => (
-            <NavItem
-              key={item.id}
-              {...item}
-              active={activeSection === item.id}
-              onClick={() => handleScroll(item.href)}
-            />
-          ))}
-        </ul>
-      </div>
-      
-      <div className="navbar-end gap-2">
-        <ThemeToggle theme={theme} onToggle={() => setTheme(theme === 'light' ? 'dark' : 'light')} />
-        <Button variant="primary" className="hidden md:flex">
-          Download Resume
-        </Button>
-      </div>
-    </nav>
-  );
-};
 ```
 
 ### Phase 4: Templates & Pages (Day 15-17)
@@ -1361,44 +1220,16 @@ export const Navbar = () => {
 import { ReactNode } from 'react';
 
 interface HomeTemplateProps {
-  navbar: ReactNode;
-  hero: ReactNode;
-  about: ReactNode;
-  skills: ReactNode;
-  projects: ReactNode;
-  experience: ReactNode;
-  blog: ReactNode;
-  contact: ReactNode;
-  footer: ReactNode;
+  navbar: React.ReactNode;
+  hero: React.ReactNode;
+  about: React.ReactNode;
+  skills: React.ReactNode;
+  projects: React.ReactNode;
+  experience: React.ReactNode;
+  blog: React.ReactNode;
+  contact: React.ReactNode;
+  footer: React.ReactNode;
 }
-
-export const HomeTemplate = ({
-  navbar,
-  hero,
-  about,
-  skills,
-  projects,
-  experience,
-  blog,
-  contact,
-  footer,
-}: HomeTemplateProps) => {
-  return (
-    <div className="min-h-screen">
-      {navbar}
-      <main>
-        <section id="home">{hero}</section>
-        <section id="about" className="py-20">{about}</section>
-        <section id="skills" className="py-20 bg-base-200">{skills}</section>
-        <section id="projects" className="py-20">{projects}</section>
-        <section id="experience" className="py-20 bg-base-200">{experience}</section>
-        <section id="blog" className="py-20">{blog}</section>
-        <section id="contact" className="py-20 bg-base-200">{contact}</section>
-      </main>
-      {footer}
-    </div>
-  );
-};
 ```
 
 **Page Development:**
@@ -1413,22 +1244,6 @@ import { About } from '@/components/organisms/About/About';
 import { aboutData } from '@/data/about';
 import { skillsData } from '@/data/skills';
 import { projectsData } from '@/data/projects';
-
-export const HomePage = () => {
-  return (
-    <HomeTemplate
-      navbar={<Navbar />}
-      hero={<Hero />}
-      about={<About data={aboutData} />}
-      skills={<SkillsGrid skills={skillsData} />}
-      projects={<ProjectsSection projects={projectsData} />}
-      experience={<Timeline />}
-      blog={<BlogSection />}
-      contact={<ContactForm />}
-      footer={<Footer />}
-    />
-  );
-};
 ```
 
 ### Phase 5: Content Population (Day 18-20)
@@ -1452,7 +1267,7 @@ export const HomePage = () => {
        ],
        image: '/projects/ecommerce.png',
        liveUrl: 'https://ecommerce-demo.vercel.app',
-       githubUrl: 'https://github.com/arjun-dev/ecommerce',
+       githubUrl: 'https://github.com/aditya27you/ecommerce',
        featured: true,
        category: 'fullstack',
        completionDate: '2024-08-15'
@@ -1518,7 +1333,7 @@ npm run preview
    ```json
    {
      "name": "portfolio-2025",
-     "homepage": "https://arjun-dev.github.io/portfolio-2025",
+     "homepage": "https://aditya27you.github.io/portfolio-2025",
      "scripts": {
        "dev": "vite",
        "build": "tsc && vite build",
@@ -1554,13 +1369,13 @@ npm run preview
    ```
 
 5. **Enable GitHub Pages**
-    - Go to: https://github.com/arjun-dev/portfolio-2025/settings/pages
+    - Go to: https://github.com/aditya27you/portfolio-2025/settings/pages
     - Select branch: `gh-pages`
     - Click Save
     - Wait 2-3 minutes
 
 6. **Verify Deployment**
-    - Visit: https://arjun-dev.github.io/portfolio-2025/
+    - Visit: https://aditya27you.github.io/portfolio-2025/
     - Test all features
     - Check mobile responsiveness
 
@@ -1581,7 +1396,7 @@ npm run preview
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://arjun-dev.github.io/portfolio-2025",
+  "homepage": "https://aditya27you.github.io/portfolio-2025",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -1667,7 +1482,7 @@ npm run preview
 
 ## 📚 Learning Outcomes
 
-By completing this portfolio project following Atomic Design principles, Arjun will:
+By completing this portfolio project following Atomic Design principles, Aditya Shah will:
 
 ✅ **Master React 19** - Functional components, hooks (useState, useEffect, useRef, custom hooks)  
 ✅ **TypeScript Proficiency** - Interfaces, type safety, generics, strict mode  
@@ -1737,35 +1552,38 @@ By completing this portfolio project following Atomic Design principles, Arjun w
 
 ## 👨‍💻 Developer Information
 
-**Name:** Arjun Sharma  
-**University:** Indian Institute of Technology (Example Campus)  
-**Year:** 3rd Year (B.Tech Computer Science)  
-**CGPA:** 8.5/10  
-**Email:** arjun.sharma@example.com  
-**Phone:** +91 98765 43210  
-**Location:** Mumbai, Maharashtra, India
+**Name:** Aditya Shah  
+**University:** ITM University, Gwalior  
+**Year:** 5th Semester (B.Tech Computer Science)  
+**CGPA:** Not disclosed  
+**Email:** shahaditya297@gmail.com  
+**Phone:** +91 7389879593  
+**Location:** Darjeeling, West Bengal, India
 
-**GitHub:** [@arjun-dev](https://github.com/arjun-dev)  
-**LinkedIn:** [linkedin.com/in/arjun-sharma-dev](https://linkedin.com/in/arjun-sharma-dev)  
-**LeetCode:** [leetcode.com/arjun_coder](https://leetcode.com/arjun_coder)  
-**Twitter:** [@arjunDev](https://twitter.com/arjunDev)
+**GitHub:** [@aditya27you](https://github.com/aditya27you)  
+**LinkedIn:** [linkedin.com/in/aditya27you](https://www.linkedin.com/in/aditya27you)  
+**HackerRank:** [hackerrank.com/shahaditya03714](https://www.hackerrank.com/shahaditya03714)  
+**Twitter:** Not available
 
 **Key Strengths:**
-- Full-Stack Development (MERN)
-- Competitive Programming (500+ problems)
-- System Design
-- Clean Code Practices
-- Agile Methodology
+- Full-Stack Web Development (MERN)
+- REST API Development
+- MongoDB & Database Design
+- Data Analytics & Machine Learning
+- Git & GitHub Workflow
+- Problem Solving & Clean Code Practices
 
 **Certifications:**
-- Google Cloud Associate Engineer
-- Meta React Professional Certificate (in progress)
+- MongoDB Official Certification
+- Postman Official Certification
+- Professional Full-Stack MERN Development Bootcamp Certification
 
 **Achievements:**
-- 🏆 Smart India Hackathon 2024 Winner
-- 🥇 College Coding Competition 1st Place
-- ⭐ 500+ DSA Problems Solved
-- 📝 Technical Blog with 10K+ views
+- 🏆 Completed Professional Full-Stack MERN Development Bootcamp (Industry-oriented training)
+- 🥇 Built EcoLearn – Gamified Environmental Education Platform (Full-Stack MERN project)
+- ⭐ Smart India Hackathon (SIH) – Participant
+- 📝 Completed Data Analytics & Web Development Internships
+- 🚀 Developed multiple real-world ML, data analytics, and full-stack projects
 
 ---
 
@@ -1773,7 +1591,7 @@ By completing this portfolio project following Atomic Design principles, Arjun w
 
 MIT License - Free to use for educational and personal projects
 
-Copyright (c) 2025 Arjun Sharma
+Copyright (c) 2025 Aditya Shah
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this portfolio template...
 
@@ -1781,8 +1599,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ## 🙏 Acknowledgments
 
-**Mentor:** Divyansh Bhardwaj ([@dbc2201](https://github.com/dbc2201))  
-**AI Assistant:** GitHub Copilot  
+**AI Assistant:** Gemini  
 **Component Library:** DaisyUI 5.0  
 **Design Methodology:** Atomic Design by Brad Frost  
 **Animation Library:** GSAP by GreenSock
@@ -1799,22 +1616,21 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 If you encounter any issues or have suggestions:
 1. Open an issue on GitHub
-2. Email: arjun.sharma@example.com
-3. DM on Twitter: @arjunDev
+2. Email: shahaditya297@gmail.com
 
 **Contribution:** Feel free to fork and create PRs for improvements!
 
 ---
 
-**Built with ❤️ and Atomic Design principles by Arjun Sharma**
+**Built with ❤️ and Atomic Design principles by Aditya Shah**
 
-*Last Updated: December 25, 2025*
+*Last Updated: December 28, 2025*
 *Version: 1.0.0*
 *PRD Status: Ready for Development* ✅
 
 ---
 
-## 🚀 Next Steps for Arjun
+## 🚀 Next Steps for Aditya Shah
 
 ### Immediate Actions:
 1. **Review this PRD** - Suggest any changes to sections, projects, or features

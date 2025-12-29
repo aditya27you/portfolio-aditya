@@ -6,18 +6,14 @@ import { Textarea } from '@/components/atoms/Textarea';
 import { Button } from '@/components/atoms/Button';
 import { SocialLinks } from '@/components/molecules/SocialLinks';
 import { Icon } from '@/components/atoms/Icon';
+import { contactData } from '@/data/contactData';
+import { socialLinksData } from '@/data/socialLinks';
 
 export interface ContactFormProps {
   className?: string;
 }
 
 export const ContactForm = ({ className = '' }: ContactFormProps) => {
-  const socialLinks = [
-    { platform: 'GitHub', url: '#', iconName: 'FaGithub' },
-    { platform: 'LinkedIn', url: '#', iconName: 'FaLinkedin' },
-    { platform: 'Twitter', url: '#', iconName: 'FaTwitter' },
-  ];
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // EmailJS integration will go here in a later task
@@ -71,17 +67,17 @@ export const ContactForm = ({ className = '' }: ContactFormProps) => {
             </Typography>
             <div className="flex items-center gap-4 mb-4">
               <Icon name="FaEnvelope" size={24} className="text-primary" />
-              <Typography variant="p">arjun.sharma@example.com</Typography>
+              <Typography variant="p">{contactData.email}</Typography>
             </div>
             <div className="flex items-center gap-4 mb-4">
               <Icon name="FaPhone" size={24} className="text-primary" />
-              <Typography variant="p">+91 98765 43210</Typography>
+              <Typography variant="p">{contactData.phone}</Typography>
             </div>
             <div className="flex items-center gap-4 mb-8">
               <Icon name="FaMapMarkerAlt" size={24} className="text-primary" />
-              <Typography variant="p">Mumbai, Maharashtra, India</Typography>
+              <Typography variant="p">{contactData.location}</Typography>
             </div>
-            <SocialLinks links={socialLinks} size="lg" className="lg:justify-start" />
+            <SocialLinks links={socialLinksData} size="lg" className="lg:justify-start" />
           </div>
         </div>
       </div>

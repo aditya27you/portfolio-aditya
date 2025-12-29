@@ -1,5 +1,3 @@
-import React from 'react';
-import { Badge } from '@/components/atoms/Badge';
 import { Icon } from '@/components/atoms/Icon';
 import { Card, CardBody } from '@/components/atoms/Card';
 
@@ -12,6 +10,7 @@ export interface CertificationBadgeProps {
   className?: string;
 }
 
+// TODO: The Badge component is not used. Implement it later.
 export const CertificationBadge = ({
   title,
   issuer,

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardBody, CardTitle, CardActions } from '@/components/atoms/Card';
 import { Typography } from '@/components/atoms/Typography';
 import { ProjectTag } from '@/components/molecules/ProjectTag';

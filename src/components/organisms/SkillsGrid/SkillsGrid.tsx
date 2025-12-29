@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Typography } from '@/components/atoms/Typography';
-import { SkillCard, SkillCardProps } from '@/components/molecules/SkillCard';
+import { SkillCard, type SkillCardProps } from '@/components/molecules/SkillCard';
 import { Button } from '@/components/atoms/Button';
 
 export interface SkillsGridProps {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HomeTemplate } from '@/components/templates/HomeTemplate';
 import { Navbar } from '@/components/organisms/Navbar';
 import { Hero } from '@/components/organisms/Hero';
@@ -9,6 +8,7 @@ import { Timeline } from '@/components/organisms/Timeline';
 import { BlogSection } from '@/components/organisms/BlogSection';
 import { ContactForm } from '@/components/organisms/ContactForm';
 import { Footer } from '@/components/organisms/Footer';
+import { Interests } from '@/components/organisms/Interests';
 
 // Data imports
 import { socialLinksData } from '@/data/socialLinks';
@@ -40,8 +40,9 @@ export const HomePage = () => {
       }
       experience={<Timeline entries={timelineData} />}
       blog={<BlogSection posts={blogPostsData} />}
+      interests={aboutData.interests ? <Interests interests={aboutData.interests} /> : null}
       contact={<ContactForm />}
-      footer={<Footer socialLinks={socialLinksData} copyrightText={`Copyright © ${new Date().getFullYear()} - All right reserved by Arjun Sharma`} />}
+      footer={<Footer socialLinks={socialLinksData} copyrightText={`Copyright © ${new Date().getFullYear()} - All right reserved by Aditya Shah`} />}
     />
   );
 };

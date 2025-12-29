@@ -1,4 +1,3 @@
-import React from 'react';
 import { Typography } from '@/components/atoms/Typography';
 import { SocialLinks } from '@/components/molecules/SocialLinks';
 

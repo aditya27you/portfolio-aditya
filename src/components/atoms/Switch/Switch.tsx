@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import type { InputHTMLAttributes } from 'react';
 
 export interface SwitchProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   variant?: 'primary' | 'secondary' | 'accent' | 'success' | 'warning' | 'info' | 'error';

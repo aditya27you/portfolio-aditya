@@ -24,8 +24,7 @@ type Story = StoryObj<typeof HomeTemplate>;
 
 // Mock data for organisms (should be replaced by actual data from src/data later)
 const mockHeroProps = {
-  name: 'Arjun Sharma',
-  roles: ['Full-Stack Developer'],
+      name: 'Aditya Shah',  roles: ['Full-Stack Developer'],
   tagline: 'Building awesome web applications.',
   primaryCtaText: 'View Work',
   secondaryCtaText: 'Contact Me',
@@ -33,8 +32,7 @@ const mockHeroProps = {
 };
 
 const mockAboutProps = {
-  name: 'Arjun Sharma',
-  title: 'Full-Stack Developer',
+      name: 'Aditya Shah',  title: 'Full-Stack Developer',
   bio: ['Short bio paragraph.'],
   image: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
   techStack: ['React', 'Node.js'],
@@ -43,7 +41,7 @@ const mockAboutProps = {
 };
 
 const mockSkills = [
-  { name: 'React', iconName: 'FaReact', proficiency: 'Advanced', category: 'Frontend' },
+  { name: 'React', iconName: 'FaReact', proficiency: 'Advanced' as const, category: 'Frontend' },
 ];
 
 const mockProject = {

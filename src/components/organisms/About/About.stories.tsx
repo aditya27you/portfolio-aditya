@@ -15,7 +15,7 @@ type Story = StoryObj<typeof About>;
 
 export const Default: Story = {
   args: {
-    name: 'Arjun Sharma',
+    name: 'Aditya Shah',
     title: 'Full-Stack Developer',
     bio: [
       "I am a passionate 3rd-year Computer Science undergraduate specializing in full-stack web development and competitive programming.",

@@ -1,12 +1,15 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from 'react';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonOrAnchorProps = ButtonHTMLAttributes<HTMLButtonElement> & AnchorHTMLAttributes<HTMLAnchorElement>;
+
+export interface ButtonProps extends Partial<ButtonOrAnchorProps> {
   variant?: 'primary' | 'secondary' | 'accent' | 'ghost' | 'link' | 'outline';
   size?: 'xs' | 'sm' | 'md' | 'lg';
   wide?: boolean;
   loading?: boolean;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
+  href?: string;
 }
 
 export const Button = ({
@@ -19,6 +22,7 @@ export const Button = ({
   className = '',
   children,
   disabled,
+  href,
   ...props
 }: ButtonProps) => {
   // Base DaisyUI class
@@ -38,16 +42,30 @@ export const Button = ({
     className
   ].filter(Boolean).join(' ');
 
-  return (
-    <button 
-      className={classes} 
-      disabled={disabled || loading}
-      {...props}
-    >
+  const content = (
+    <>
       {loading && <span className="loading loading-spinner"></span>}
       {!loading && leftIcon && <span className="mr-2 flex items-center">{leftIcon}</span>}
       {children}
       {!loading && rightIcon && <span className="ml-2 flex items-center">{rightIcon}</span>}
+    </>
+  );
+
+  if (href) {
+    return (
+      <a className={classes} href={href} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button 
+      className={classes} 
+      disabled={disabled || loading}
+      {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}
+    >
+      {content}
     </button>
   );
 };

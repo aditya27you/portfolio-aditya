@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 export interface HomeTemplateProps {
   navbar: ReactNode;
@@ -8,6 +8,7 @@ export interface HomeTemplateProps {
   projects: ReactNode;
   experience: ReactNode;
   blog: ReactNode;
+  interests?: ReactNode;
   contact: ReactNode;
   footer: ReactNode;
   className?: string;
@@ -21,6 +22,7 @@ export const HomeTemplate = ({
   projects,
   experience,
   blog,
+  interests,
   contact,
   footer,
   className = '',
@@ -35,6 +37,7 @@ export const HomeTemplate = ({
         {projects}
         {experience}
         {blog}
+        {interests}
         {contact}
       </main>
       {footer}

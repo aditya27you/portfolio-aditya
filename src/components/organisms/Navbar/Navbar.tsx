@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NavItem } from '@/components/molecules/NavItem';
 import { ThemeToggle } from '@/components/molecules/ThemeToggle';
 import { Button } from '@/components/atoms/Button';
 import { Typography } from '@/components/atoms/Typography';
+import { Icon } from '@/components/atoms/Icon'; // Keep this import
 // GSAP imports will be added when actual scrolling behavior is implemented
 // import { gsap } from 'gsap';
 // import { ScrollToPlugin } from 'gsap/ScrollToPlugin';

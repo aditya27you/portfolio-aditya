@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import type { AnchorHTMLAttributes } from 'react';
 
 export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: 'primary' | 'secondary' | 'accent' | 'neutral' | 'info' | 'success' | 'warning' | 'error';

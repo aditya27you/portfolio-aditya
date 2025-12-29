@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardBody, CardTitle, CardActions } from '@/components/atoms/Card';
 import { Badge } from '@/components/atoms/Badge';
 import { Button } from '@/components/atoms/Button';
@@ -12,14 +11,16 @@ export interface BlogPost {
   readTime: string;
   date: string;
   slug: string;
+  content?: string;
 }
 
 export interface BlogCardProps {
   post: BlogPost;
+  onReadMore?: (post: BlogPost) => void;
   className?: string;
 }
 
-export const BlogCard = ({ post, className = '' }: BlogCardProps) => {
+export const BlogCard = ({ post, onReadMore, className = '' }: BlogCardProps) => {
   return (
     <Card className={`w-full bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 ${className}`}>
       <figure className="relative h-48 overflow-hidden">
@@ -34,14 +35,18 @@ export const BlogCard = ({ post, className = '' }: BlogCardProps) => {
           <span>•</span>
           <Icon name="FaClock" /> <span>{post.readTime}</span>
         </div>
-        <CardTitle className="hover:text-primary transition-colors cursor-pointer">
+        <CardTitle className="hover:text-primary transition-colors cursor-pointer" onClick={() => onReadMore?.(post)}>
           {post.title}
         </CardTitle>
         <p className="text-base-content/80 line-clamp-3">
           {post.excerpt}
         </p>
         <CardActions className="mt-4">
-          <Button variant="link" className="px-0 no-underline hover:underline group">
+          <Button 
+            variant="link" 
+            className="px-0 no-underline hover:underline group"
+            onClick={() => onReadMore?.(post)}
+          >
             Read Article 
             <Icon name="FaArrowRight" className="group-hover:translate-x-1 transition-transform" />
           </Button>

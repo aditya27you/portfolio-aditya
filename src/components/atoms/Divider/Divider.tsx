@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import type { HTMLAttributes } from 'react';
 
 export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   vertical?: boolean;

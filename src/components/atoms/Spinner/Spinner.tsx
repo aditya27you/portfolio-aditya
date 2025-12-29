@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import type { HTMLAttributes } from 'react';
 
 export interface SpinnerProps extends HTMLAttributes<HTMLSpanElement> {
   variant?: 'spinner' | 'dots' | 'ring' | 'ball' | 'bars' | 'infinity';

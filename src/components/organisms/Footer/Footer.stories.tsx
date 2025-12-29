@@ -22,6 +22,6 @@ const sampleSocialLinks = [
 export const Default: Story = {
   args: {
     socialLinks: sampleSocialLinks,
-    copyrightText: `Copyright © ${new Date().getFullYear()} - All right reserved by Arjun Sharma`,
+    copyrightText: `Copyright © ${new Date().getFullYear()} - All right reserved by Aditya Shah`,
   },
 };
