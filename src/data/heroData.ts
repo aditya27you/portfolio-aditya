@@ -1,7 +1,9 @@
 export const heroData = {
-  name: 'Arjun Sharma',
-  roles: ['Full-Stack Developer', 'Competitive Programmer', 'Problem Solver'],
-  tagline: '3rd Year CS Undergrad | MERN Stack Developer | Passionate about building scalable products.',
+  name: 'Aditya Shah',
+  roles: ['Full-Stack MERN Developer', 'Data Analytics Enthusiast', 'Machine Learning Enthusiast'],
+  tagline: 'CS Undergrad @ ITM University | MERN Stack Developer | Passionate about Data Science & AI.',
   primaryCtaText: 'View Projects',
+  primaryCtaLink: '#projects',
   secondaryCtaText: 'Download Resume',
+  secondaryCtaLink: '/resume.pdf',
 };
