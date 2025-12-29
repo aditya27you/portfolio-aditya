@@ -1,0 +1,41 @@
+export const projectsData = [
+  {
+    title: 'E-Commerce Platform',
+    description: 'Full-stack shopping site with cart, payments, and admin panel.',
+    image: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    liveUrl: 'https://github.com',
+    githubUrl: 'https://github.com',
+  },
+  {
+    title: 'Real-Time Chat Application',
+    description: 'WebSocket-based messaging app with rooms and user presence.',
+    image: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    technologies: ['React', 'Socket.io', 'Node.js'],
+    liveUrl: 'https://github.com',
+    githubUrl: 'https://github.com',
+  },
+  {
+    title: 'Portfolio Website Builder',
+    description: 'A template-based portfolio generator for students and professionals.',
+    image: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    technologies: ['React', 'TypeScript', 'TailwindCSS', 'Firebase'],
+    liveUrl: 'https://github.com',
+    githubUrl: 'https://github.com',
+  },
+  {
+    title: 'College Event Management System',
+    description: 'Platform for organizing campus events with ticketing and notifications.',
+    image: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    technologies: ['React', 'Node.js', 'MySQL', 'AWS S3'],
+    liveUrl: 'https://github.com',
+    githubUrl: 'https://github.com',
+  },
+  {
+    title: 'DSA Problem Tracker',
+    description: 'Tool to track competitive programming progress and visualize stats.',
+    image: 'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    technologies: ['React', 'Chart.js', 'LocalStorage'],
+    githubUrl: 'https://github.com',
+  },
+];
