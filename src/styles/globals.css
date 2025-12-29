@@ -17,6 +17,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Fix for light theme visibility */
+[data-theme='light'] {
+  color-scheme: light;
+  color: #1F2937; /* Dark gray text for light mode */
+  background-color: #F0F4F8; /* Matches your tailwind config base-100 */
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

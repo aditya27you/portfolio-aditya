@@ -25,11 +25,12 @@ export default {
       {
         light: {
           primary: "#3B82F6",
-          secondary: "#06B6D4",
-          accent: "#14B8A6",
+          secondary: "#60A5FA",
+          accent: "#93C5FD",
           neutral: "#1F2937",
-          "base-100": "#FFFFFF",
-          "base-200": "#F3F4F6",
+          "base-100": "#F0F4F8",
+          "base-200": "#E1E8F0",
+          "base-300": "#D1DBE5",
         },
         dark: {
           primary: "#60A5FA",
