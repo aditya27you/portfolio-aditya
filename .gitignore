@@ -27,3 +27,5 @@ dist-ssr
 .storybook
 .github
 
+# Temporary files
+*.ts.
