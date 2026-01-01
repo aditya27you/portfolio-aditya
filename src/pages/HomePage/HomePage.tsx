@@ -9,6 +9,7 @@ import { BlogSection } from '@/components/organisms/BlogSection';
 import { ContactForm } from '@/components/organisms/ContactForm';
 import { Footer } from '@/components/organisms/Footer';
 import { Interests } from '@/components/organisms/Interests';
+import { AnimatedSection } from '@/components/atoms/AnimatedSection';
 
 // Data imports
 import { socialLinksData } from '@/data/socialLinks';
@@ -24,24 +25,52 @@ export const HomePage = () => {
     <HomeTemplate
       navbar={<Navbar />}
       hero={<Hero {...heroData} socialLinks={socialLinksData} />}
-      about={<About {...aboutData} socialLinks={socialLinksData} />}
-      skills={<SkillsGrid skills={skillsData} />}
-      projects={
-        <section className="py-16 px-8 bg-base-100" id="projects">
-          <div className="container mx-auto max-w-5xl">
-            <h2 className="text-center text-4xl font-bold mb-12">My Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {projectsData.map((project, index) => (
-                <ProjectCard key={index} project={project} />
-              ))}
-            </div>
-          </div>
-        </section>
+      about={
+        <AnimatedSection>
+          <About {...aboutData} socialLinks={socialLinksData} />
+        </AnimatedSection>
       }
-      experience={<Timeline entries={timelineData} />}
-      blog={<BlogSection posts={blogPostsData} />}
-      interests={aboutData.interests ? <Interests interests={aboutData.interests} /> : null}
-      contact={<ContactForm />}
+      skills={
+        <AnimatedSection>
+          <SkillsGrid skills={skillsData} />
+        </AnimatedSection>
+      }
+      projects={
+        <AnimatedSection>
+          <section className="py-16 px-8 bg-base-100" id="projects">
+            <div className="container mx-auto max-w-5xl">
+              <h2 className="text-center text-4xl font-bold mb-12">My Projects</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                {projectsData.map((project, index) => (
+                  <ProjectCard key={index} project={project} />
+                ))}
+              </div>
+            </div>
+          </section>
+        </AnimatedSection>
+      }
+      experience={
+        <AnimatedSection>
+          <Timeline entries={timelineData} />
+        </AnimatedSection>
+      }
+      blog={
+        <AnimatedSection>
+          <BlogSection posts={blogPostsData} />
+        </AnimatedSection>
+      }
+      interests={
+        aboutData.interests ? (
+          <AnimatedSection>
+            <Interests interests={aboutData.interests} />
+          </AnimatedSection>
+        ) : null
+      }
+      contact={
+        <AnimatedSection>
+          <ContactForm />
+        </AnimatedSection>
+      }
       footer={<Footer socialLinks={socialLinksData} copyrightText={`Copyright © ${new Date().getFullYear()} - All right reserved by Aditya Shah`} />}
     />
   );

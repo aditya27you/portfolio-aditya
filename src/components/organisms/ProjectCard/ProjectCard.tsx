@@ -20,7 +20,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
   return (
-    <Card className={`relative group overflow-hidden w-full max-w-sm transition-all duration-300 ${className}`}>
+    <Card className={`relative group overflow-hidden w-full max-w-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2 ${className}`}>
       <figure className="h-56 overflow-hidden">
         <img 
           src={project.image} 

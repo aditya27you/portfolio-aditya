@@ -11,7 +11,7 @@ gsap.registerPlugin(TextPlugin);
 export interface HeroProps {
   name: string;
   roles: string[];
-  tagline: string;
+  tagline:string;
   primaryCtaText: string;
   secondaryCtaText: string;
   primaryCtaLink?: string;
@@ -32,17 +32,27 @@ export const Hero = ({
   className = '',
 }: HeroProps) => {
   const roleRef = useRef(null);
+  const heroRef = useRef(null);
 
   useEffect(() => {
     const timeline = gsap.timeline({ repeat: -1 });
     roles.forEach(role => {
       timeline.to(roleRef.current, { duration: 2, text: role, ease: "none" }).to(roleRef.current, { duration: 1, text: "", ease: "none" });
     });
+
+    const heroElements = heroRef.current.children;
+    gsap.from(heroElements, {
+      duration: 1,
+      y: 50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power3.out',
+    });
   }, [roles]);
 
   return (
     <section id="home" className={`relative min-h-screen flex flex-col justify-center items-center text-center p-8 bg-base-100 text-base-content ${className}`}>
-      <div className="max-w-4xl z-10">
+      <div className="max-w-4xl z-10" ref={heroRef}>
         <Typography variant="h1" className="text-5xl md:text-7xl font-bold mb-4">
           Hi, I'm {name}
         </Typography>
