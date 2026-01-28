@@ -1,4 +1,4 @@
-import type { TextareaHTMLAttributes } from 'react';
+import { forwardRef, type TextareaHTMLAttributes } from 'react';
 
 export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   variant?: 'bordered' | 'ghost' | 'primary' | 'secondary' | 'accent' | 'info' | 'success' | 'warning' | 'error';
@@ -8,14 +8,14 @@ export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
   className?: string;
 }
 
-export const Textarea = ({
+export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({
   variant = 'bordered',
   size = 'md',
   label,
   error,
   className = '',
   ...props
-}: TextareaProps) => {
+}, ref) => {
   const variantClass = `textarea-${variant}`;
   const sizeClass = `textarea-${size}`;
   const errorClass = error ? 'textarea-error' : '';
@@ -28,6 +28,7 @@ export const Textarea = ({
         </label>
       )}
       <textarea
+        ref={ref}
         className={`textarea ${variantClass} ${sizeClass} ${errorClass} h-24 w-full ${className}`}
         {...props}
       />
@@ -38,4 +39,6 @@ export const Textarea = ({
       )}
     </div>
   );
-};
+});
+
+Textarea.displayName = 'Textarea';

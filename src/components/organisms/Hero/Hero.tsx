@@ -31,10 +31,12 @@ export const Hero = ({
   socialLinks,
   className = '',
 }: HeroProps) => {
-  const roleRef = useRef(null);
-  const heroRef = useRef(null);
+  const roleRef = useRef<HTMLSpanElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!heroRef.current || !roleRef.current) return;
+    
     const timeline = gsap.timeline({ repeat: -1 });
     roles.forEach(role => {
       timeline.to(roleRef.current, { duration: 2, text: role, ease: "none" }).to(roleRef.current, { duration: 1, text: "", ease: "none" });

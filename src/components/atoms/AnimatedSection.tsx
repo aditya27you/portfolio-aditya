@@ -1,5 +1,5 @@
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 interface AnimatedSectionProps {
   children: ReactNode;
