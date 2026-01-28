@@ -5,6 +5,7 @@ import { About } from '@/components/organisms/About';
 import { SkillsGrid } from '@/components/organisms/SkillsGrid';
 import { ProjectsSection } from '@/components/organisms/ProjectsSection';
 import { Timeline } from '@/components/organisms/Timeline';
+import { AchievementsShowcase } from '@/components/organisms/AchievementsShowcase';
 import { BlogSection } from '@/components/organisms/BlogSection';
 import { ContactForm } from '@/components/organisms/ContactForm';
 import { Footer } from '@/components/organisms/Footer';
@@ -18,6 +19,7 @@ import { aboutData } from '@/data/aboutData';
 import { skillsData } from '@/data/skillsData';
 import { projectsData } from '@/data/projectsData';
 import { timelineData } from '@/data/timelineData';
+import { certificationsData } from '@/data/certificationsData';
 import { blogPostsData } from '@/data/blogPostsData';
 
 export const HomePage = () => {
@@ -43,6 +45,11 @@ export const HomePage = () => {
       experience={
         <AnimatedSection>
           <Timeline entries={timelineData} />
+        </AnimatedSection>
+      }
+      achievements={
+        <AnimatedSection>
+          <AchievementsShowcase certifications={certificationsData} />
         </AnimatedSection>
       }
       blog={
