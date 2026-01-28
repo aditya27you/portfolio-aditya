@@ -7,6 +7,7 @@ export interface HomeTemplateProps {
   skills: ReactNode;
   projects: ReactNode;
   experience: ReactNode;
+  achievements?: ReactNode;
   blog: ReactNode;
   interests?: ReactNode;
   contact: ReactNode;
@@ -21,6 +22,7 @@ export const HomeTemplate = ({
   skills,
   projects,
   experience,
+  achievements,
   blog,
   interests,
   contact,
@@ -36,6 +38,7 @@ export const HomeTemplate = ({
         {skills}
         {projects}
         {experience}
+        {achievements}
         {blog}
         {interests}
         {contact}

@@ -1,4 +1,5 @@
 import { Icon } from '@/components/atoms/Icon';
+import { Badge } from '@/components/atoms/Badge';
 import { Card, CardBody } from '@/components/atoms/Card';
 
 export interface CertificationBadgeProps {
@@ -10,7 +11,6 @@ export interface CertificationBadgeProps {
   className?: string;
 }
 
-// TODO: The Badge component is not used. Implement it later.
 export const CertificationBadge = ({
   title,
   issuer,
@@ -26,7 +26,10 @@ export const CertificationBadge = ({
           <Icon name={iconName} size={24} />
         </div>
         <div className="flex-1">
-          <h4 className="font-bold text-base">{title}</h4>
+          <div className="flex items-center gap-2 mb-1">
+            <h4 className="font-bold text-base">{title}</h4>
+            <Badge variant="primary" size="sm">Verified</Badge>
+          </div>
           <p className="text-sm text-base-content/70">{issuer} • {date}</p>
         </div>
         {verifyUrl && (

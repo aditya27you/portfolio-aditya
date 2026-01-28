@@ -12,7 +12,7 @@ export interface SkillsGridProps {
 
 export const SkillsGrid = ({ skills, className = '' }: SkillsGridProps) => {
   const [activeCategory, setActiveCategory] = useState('All');
-  const gridRef = useRef(null);
+  const gridRef = useRef<HTMLDivElement>(null);
   const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.1 });
 
   const categories = ['All', ...Array.from(new Set(skills.map(s => s.category)))];
@@ -22,7 +22,7 @@ export const SkillsGrid = ({ skills, className = '' }: SkillsGridProps) => {
   );
 
   useEffect(() => {
-    if (isIntersecting) {
+    if (isIntersecting && gridRef.current) {
       gsap.fromTo(
         gridRef.current.children,
         { y: 50, opacity: 0 },

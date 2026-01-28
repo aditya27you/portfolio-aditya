@@ -1,4 +1,4 @@
-import { type InputHTMLAttributes, type ReactNode } from 'react';
+import { forwardRef, type InputHTMLAttributes, type ReactNode } from 'react';
 
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   variant?: 'bordered' | 'ghost' | 'primary' | 'secondary' | 'accent' | 'info' | 'success' | 'warning' | 'error';
@@ -9,7 +9,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   className?: string;
 }
 
-export const Input = ({
+export const Input = forwardRef<HTMLInputElement, InputProps>(({
   variant = 'bordered',
   size = 'md',
   label,
@@ -17,7 +17,7 @@ export const Input = ({
   leftIcon,
   className = '',
   ...props
-}: InputProps) => {
+}, ref) => {
   const variantClass = `input-${variant}`;
   const sizeClass = `input-${size}`;
   const errorClass = error ? 'input-error' : '';
@@ -39,6 +39,7 @@ export const Input = ({
           </div>
         )}
         <input
+          ref={ref}
           className={`input ${variantClass} ${sizeClass} ${errorClass} w-full ${leftIcon ? 'pl-10' : ''} ${className}`}
           {...nativeProps}
         />
@@ -50,4 +51,6 @@ export const Input = ({
       )}
     </div>
   );
-};
+});
+
+Input.displayName = 'Input';
