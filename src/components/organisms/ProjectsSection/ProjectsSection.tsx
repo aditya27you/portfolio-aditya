@@ -31,13 +31,15 @@ export const ProjectsSection = ({ projects, className = '' }: ProjectsSectionPro
         </Typography>
 
         {/* Category Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-12" role="group" aria-label="Filter projects by category">
           {categories.map(category => (
             <Button
               key={category}
               variant={activeCategory === category ? 'primary' : 'outline'}
               size="sm"
               onClick={() => setActiveCategory(category)}
+              aria-label={`Filter projects by ${category}`}
+              aria-pressed={activeCategory === category}
             >
               {category}
             </Button>
@@ -47,8 +49,8 @@ export const ProjectsSection = ({ projects, className = '' }: ProjectsSectionPro
         {/* Projects Grid */}
         {filteredProjects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            {filteredProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+            {filteredProjects.map((project) => (
+              <ProjectCard key={`${project.title}-${project.githubUrl}`} project={project} />
             ))}
           </div>
         ) : (

@@ -58,13 +58,15 @@ export const BlogSection = ({ posts, className = '' }: BlogSectionProps) => {
           </div>
           
           {/* Category Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter articles by category">
             {categories.map(category => (
               <Button
                 key={category}
                 variant={activeCategory === category ? 'primary' : 'outline'}
                 size="sm"
                 onClick={() => setActiveCategory(category)}
+                aria-label={`Filter articles by ${category}`}
+                aria-pressed={activeCategory === category}
               >
                 {category}
               </Button>
@@ -75,8 +77,8 @@ export const BlogSection = ({ posts, className = '' }: BlogSectionProps) => {
         {/* Blog Posts Grid */}
         {filteredPosts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.map((post, index) => (
-              <BlogCard key={index} post={post} onReadMore={handleReadMore} />
+            {filteredPosts.map((post) => (
+              <BlogCard key={post.slug} post={post} onReadMore={handleReadMore} />
             ))}
           </div>
         ) : (

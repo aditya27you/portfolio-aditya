@@ -27,6 +27,7 @@ export const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(({
         placeholder={placeholder}
         leftIcon={<Icon name="FaSearch" size={18} />}
         onChange={handleChange}
+        aria-label="Search articles"
         {...props}
       />
     </div>

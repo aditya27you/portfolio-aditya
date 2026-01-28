@@ -21,8 +21,8 @@ export const AchievementsShowcase = ({ certifications, className = '' }: Achieve
         </Typography>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {certifications.map((cert, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+          {certifications.map((cert) => (
+            <Card key={`${cert.title}-${cert.issuer}`} className="hover:shadow-xl transition-shadow duration-300">
               <CardBody className="flex flex-col gap-3">
                 <div className="flex items-start justify-between">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">

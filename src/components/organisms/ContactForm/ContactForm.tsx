@@ -49,11 +49,16 @@ export const ContactForm = ({ className = '' }: ContactFormProps) => {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration
-      // Note: These are public keys - in production, set up environment variables
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_demo';
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_demo';
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'demo_public_key';
+      // EmailJS configuration - ensure environment variables are set
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        console.warn('EmailJS credentials not configured. Please set up environment variables.');
+        setSubmitStatus('error');
+        return;
+      }
 
       await emailjs.send(
         serviceId,
@@ -103,7 +108,7 @@ export const ContactForm = ({ className = '' }: ContactFormProps) => {
               {submitStatus === 'error' && (
                 <div className="alert alert-error mb-4">
                   <Icon name="FaExclamationCircle" size={20} />
-                  <span>Failed to send message. Please try again or email me directly.</span>
+                  <span>Failed to send message. Please email me directly at shahaditya297@gmail.com</span>
                 </div>
               )}
               
