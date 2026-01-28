@@ -6,6 +6,7 @@ export const projectsData = [
     technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'MERN Stack', 'TailwindCSS'],
     liveUrl: '#',
     githubUrl: 'https://github.com/aditya27you/EcoLearn',
+    category: 'Full-Stack',
   },
   {
     title: 'Data Insights: Real-world Analytics',
@@ -14,6 +15,7 @@ export const projectsData = [
     technologies: ['Python', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'PySpark', 'Tableau'],
     liveUrl: '#',
     githubUrl: 'https://github.com/aditya27you',
+    category: 'Data Science',
   },
   {
     title: 'AI/ML Model Showcase',
@@ -22,6 +24,7 @@ export const projectsData = [
     technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'Jupyter'],
     liveUrl: '#',
     githubUrl: 'https://github.com/aditya27you',
+    category: 'Data Science',
   },
   {
     title: 'RESTful API Services',
@@ -30,5 +33,6 @@ export const projectsData = [
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'Postman', 'REST API'],
     liveUrl: '#',
     githubUrl: 'https://github.com/aditya27you',
+    category: 'Backend',
   },
 ];

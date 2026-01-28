@@ -3,7 +3,7 @@ import { Navbar } from '@/components/organisms/Navbar';
 import { Hero } from '@/components/organisms/Hero';
 import { About } from '@/components/organisms/About';
 import { SkillsGrid } from '@/components/organisms/SkillsGrid';
-import { ProjectCard } from '@/components/organisms/ProjectCard';
+import { ProjectsSection } from '@/components/organisms/ProjectsSection';
 import { Timeline } from '@/components/organisms/Timeline';
 import { BlogSection } from '@/components/organisms/BlogSection';
 import { ContactForm } from '@/components/organisms/ContactForm';
@@ -37,16 +37,7 @@ export const HomePage = () => {
       }
       projects={
         <AnimatedSection>
-          <section className="py-16 px-8 bg-base-100" id="projects">
-            <div className="container mx-auto max-w-5xl">
-              <h2 className="text-center text-4xl font-bold mb-12">My Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-                {projectsData.map((project, index) => (
-                  <ProjectCard key={index} project={project} />
-                ))}
-              </div>
-            </div>
-          </section>
+          <ProjectsSection projects={projectsData} />
         </AnimatedSection>
       }
       experience={
