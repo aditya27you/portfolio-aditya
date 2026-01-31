@@ -1,0 +1,6 @@
+// Updated ProjectsData
+const ProjectsData = [
+    // Existing projects...
+    { title: 'Fit Form AI', description: 'A smart fitness application that utilizes AI.' },
+    // Other projects...
+];
